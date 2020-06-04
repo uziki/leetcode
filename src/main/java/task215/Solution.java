@@ -1,6 +1,7 @@
-package java.task215;
+package task215;
 
 import java.util.ArrayList;
+import java.util.List;
 
 //Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
 
@@ -12,8 +13,8 @@ public class Solution {
     }
 
     public static int findKthLargest(int[] nums, int k) {
-        ArrayList left = new ArrayList();
-        ArrayList right = new ArrayList();
+        List left = new ArrayList();
+        List right = new ArrayList();
         int j = nums.length / 2;
         for (int i = 0; i < nums.length; i++) {
             if (i != j) {
@@ -31,7 +32,7 @@ public class Solution {
         }
     }
 
-    protected static int[] listToArray(ArrayList list) {
+    protected static int[] listToArray(List list) {
         int[] array = new int[list.size()];
         for (int i = 0; i < list.size(); i++) {
             array[i] = (int) list.get(i);
