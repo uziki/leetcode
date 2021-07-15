@@ -11,6 +11,7 @@ public class Solution {
         System.out.println(Integer.toBinaryString(test));
         System.out.println(binaryGap(test));
     }
+
     public static int binaryGap(int N) {
         int max = 0;
         int currentMax = 0;
