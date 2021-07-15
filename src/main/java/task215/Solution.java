@@ -28,7 +28,7 @@ public class Solution {
             return findKthLargest(array, k);
         } else {
             int[] array = listToArray(right);
-            return left.size() == 0 ? findKthLargest(array, k-1) : findKthLargest(array, k - (left.size() + 1));
+            return left.size() == 0 ? findKthLargest(array, k - 1) : findKthLargest(array, k - (left.size() + 1));
         }
     }
 
